@@ -1,0 +1,61 @@
+<nav class="navbar navbar-dark bg-primary">
+    <span class="navbar-brand mx-auto text-center mb-0 h1">Personal Details</span>
+</nav>
+<div class="row padd">
+    <div class="col-md-6 col-12 mx-auto shadow p-3 mb-5 bg-white rounded">
+        <form>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Date of Birth</label>
+                        <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="Phone Number">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Occupation</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Occupation">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Height</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Height">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Weight</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Weight">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Pre-Existing Health Conditions</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <label for="exampleFormControlTextarea1">Calculated Premium (per month):</label>
+                </div>
+                <div class="col-6">
+                    <label for="exampleFormControlTextarea1">{{premiumAmount}}</label>
+                </div>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col-6">
+                <a class="btn btn-success btn-block text-white" [routerLink]="['/payment']">Pay & Buy</a>
+            </div>
+            <div class="col-6">
+                <a class="btn btn-primary btn-block" [routerLink]="['/premium']">Clear</a>
+            </div>
+        </div>
+    </div>
+</div>
